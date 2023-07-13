@@ -535,7 +535,7 @@ void ogrenciDosyaOku(OGRENCI **head, OGRENCI **tail)
     FILE *ogrenci;
     int read=0;
 
-    ogrenci=fopen("C:\\Users\\nur\\OneDrive\\Desktop\\Ogrenciler.csv","r"); // ACILACAK DOSYANIN ADRESI.
+    ogrenci=fopen("path","r"); // ACILACAK DOSYANIN ADRESI.
     if(ogrenci==NULL) // dosya acilamadiysa hata ver.
     {
         printf("Dosya acma hatasi.\n");
@@ -584,7 +584,7 @@ void ogrenciDosyaYaz(OGRENCI *head){
 
     index=head;
 
-    ogrenci=fopen("C:\\Users\\nur\\OneDrive\\Desktop\\Ogrenciler.csv","w"); // ACILACAK DOSYANIN ADRESI.
+    ogrenci=fopen("path","w"); // ACILACAK DOSYANIN ADRESI.
     if(index==NULL) // dosya acilamadiysa hata ver.
     {
         printf("Dosya acma hatasi.\n");
@@ -610,7 +610,7 @@ void kitapDosyaYaz(KITAP *head){
     FILE* kitap;
 
     index=head;
-    kitap=fopen("C:\\Users\\nur\\OneDrive\\Desktop\\Kitaplar.csv","w");
+    kitap=fopen("path","w");
     if(kitap==NULL){
         printf("\nDosya acma hatasi.");
     }
@@ -632,7 +632,7 @@ void kitapDosyaOku(KITAP **kitapHead){
     FILE *kitap;
     int read=0;
 
-    kitap=fopen("C:\\Users\\nur\\OneDrive\\Desktop\\Kitaplar.csv","r"); // ACILACAK DOSYANIN ADRESI.
+    kitap=fopen("path","r"); // ACILACAK DOSYANIN ADRESI.
     if(kitap==NULL) // dosya acilamadiysa hata ver.
     {
         printf("Dosya acma hatasi.\n");
@@ -932,7 +932,7 @@ void yazarDosyaOku(YAZAR** head) {
 
     FILE *yazar;
     int read = 0;
-    yazar = fopen("C:\\Users\\nur\\OneDrive\\Desktop\\Yazarlar.csv", "r"); // ACILACAK DOSYANIN ADRESI.
+    yazar = fopen("path", "r"); // ACILACAK DOSYANIN ADRESI.
     if (yazar == NULL) // dosya acilamadiysa hata ver.
     {
         printf("Dosya acma hatasi.\n");
@@ -977,7 +977,7 @@ void yazarDosyaYaz(YAZAR **head){
     FILE* yazar;
 
     index=*head;
-    yazar=fopen("C:\\Users\\nur\\OneDrive\\Desktop\\Yazarlar.csv","w");
+    yazar=fopen("path","w");
     if(yazar==NULL){
         printf("\nDosya acma hatasi.");
     }
@@ -1230,7 +1230,7 @@ void kitapYazarDosyaOku(KITAPYAZAR** head) {
     FILE *kitapYazar;
     int read=0;
 
-    kitapYazar=fopen("C:\\Users\\nur\\OneDrive\\Desktop\\KitapYazar.csv","r"); // ACILACAK DOSYANIN ADRESI.
+    kitapYazar=fopen("path","r"); // ACILACAK DOSYANIN ADRESI.
     if(kitapYazar==NULL) // dosya acilamadiysa hata ver.
     {
         printf("Dosya acma hatasi.\n");
@@ -1272,7 +1272,7 @@ void kitapOduncDosyaOku(KITAPODUNC** head, KITAP** kHead) {
     int read=0;
     unsigned int val1,val2,val3,val4;
 
-    kitapOdunc=fopen("C:\\Users\\nur\\OneDrive\\Desktop\\KitapOdunc.csv","r"); // ACILACAK DOSYANIN ADRESI.
+    kitapOdunc=fopen("path","r"); // ACILACAK DOSYANIN ADRESI.
     if(kitapOdunc==NULL) // dosya acilamadiysa hata ver.
     {
         printf("Dosya acma hatasi.\n");
@@ -1507,7 +1507,7 @@ void kitapOduncDosyaYaz(KITAPODUNC *head){
     FILE* kitapodunc;
 
     index=head;
-    kitapodunc=fopen("C:\\Users\\nur\\OneDrive\\Desktop\\KitapOdunc.csv","w");
+    kitapodunc=fopen("path","w");
     if(kitapodunc==NULL){
         printf("\nDosya acma hatasi.");
     }
@@ -1529,7 +1529,7 @@ void kitapYazarDosyaYaz(KITAPYAZAR *head){
     FILE* kitapYazar;
 
     index=head;
-    kitapYazar=fopen("C:\\Users\\nur\\OneDrive\\Desktop\\KitapYazar.csv","w");
+    kitapYazar=fopen("path","w");
     if(kitapYazar==NULL){
         printf("\nDosya acma hatasi.");
     }
