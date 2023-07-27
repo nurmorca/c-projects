@@ -1,5 +1,5 @@
-/*creates a random binary tree and the user tries to drop the nodes by entering 
-a value bigger than its own value. the tree gets rearranged proper to binary tree
+/* creates a random binary tree and the user tries to drop the nodes by entering 
+a value bigger than their own value. the tree gets rearranged proper to binary tree
 structure if a node falls off. */
 
 #include <stdio.h>
